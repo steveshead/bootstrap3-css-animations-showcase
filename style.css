@@ -1,0 +1,1002 @@
+body {
+    background-color: #ddd;
+}
+
+main {
+    padding-top: 75px;
+    padding-bottom: 85px;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+  color: rgba(153,51,51,1);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: rgba(153,51,51,0.65);
+  text-decoration: none;
+}
+
+.hr {
+    max-width: 450px;
+    height: 5px;
+    padding: 0;
+    text-align: center;
+    clear: left;
+    display: block;
+    margin: 20px auto 80px auto;
+    width: 100%;
+    background: #000;
+    border-radius: 5px;
+}
+
+.hr:before {
+    content: "\f06c";
+    font-family: 'fontawesome';
+    font-weight: normal;
+    position: relative;
+    top: -0.62em;
+    color: #000;
+    font-size: 32px;
+    padding: 0em 0.2em 0.2em 0.3em;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.hr-white {
+    max-width: 450px;
+    height: 5px;
+    padding: 0;
+    text-align: center;
+    clear: left;
+    display: block;
+    margin: 20px auto 80px auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.hr-white:before {
+    content: "\f06c";
+    font-family: 'fontawesome';
+    font-weight: normal;
+    position: relative;
+    top: -0.62em;
+    color: #fff;
+    font-size: 32px;
+    padding: 0em 0.2em 0.2em 0.3em;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.container-fluid {
+    padding-right: 95px;
+    padding-left: 95px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.btn-outline-dark {
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.btn-outline-dark:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #333;
+}
+
+.btn-dark {
+    padding: 7px 20px;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.btn-dark:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.main {
+    position: relative;
+    min-height: 1px;
+}
+
+.intro button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#bigTriangleblack path {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 2;
+    background-color: #ddd !important;
+}
+
+#bigTriangleblack {
+    background-color: #ddd;
+    margin-bottom: -5px;
+}
+
+#bigTrianglegrey path {
+    fill: #ddd;
+    stroke: #ddd;
+    stroke-width: 2;
+}
+
+
+/* Animated Border */
+
+.page-border-top-right {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    height: 8px;
+    width: calc(50% - 50px);
+    background-color: #fff;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: drawleft;
+    animation-name: drawleft
+}
+
+@media only screen and (min-width:993px) {
+    .page-border-top-right {
+        display: block
+    }
+}
+
+.page-border-top-left {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    height: 8px;
+    width: calc(50% - 50px);
+    background-color: #fff;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: drawleft;
+    animation-name: drawleft
+}
+
+@media only screen and (min-width:993px) {
+    .page-border-top-left {
+        display: block
+    }
+}
+
+.page-border-bottom {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    height: 8px;
+    width: calc(100% - 100px);
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: drawacross;
+    animation-name: drawacross
+}
+
+@media only screen and (min-width:993px) {
+    .page-border-bottom {
+        display: block
+    }
+}
+
+.page-border-right {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 8px;
+    height: calc(100% - 100px);
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-name: drawdown;
+    animation-name: drawdown
+}
+
+@media only screen and (min-width:993px) {
+    .page-border-right {
+        display: block
+    }
+}
+
+.page-border-left {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 8px;
+    height: calc(100% - 100px);
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-name: drawdown;
+    animation-name: drawdown
+}
+
+@media only screen and (min-width:993px) {
+    .page-border-left {
+        display: block
+    }
+}
+
+@-webkit-keyframes drawleft {
+    0%, 40% {
+        width: 0
+    }
+    to {
+        width: calc(50% - 50px)
+    }
+}
+
+@keyframes drawleft {
+    0%, 40% {
+        width: 0
+    }
+    to {
+        width: calc(50% - 50px)
+    }
+}
+
+@-webkit-keyframes drawdown {
+    0%, 50% {
+        height: 0
+    }
+    to {
+        height: calc(100% - 100px)
+    }
+}
+
+@keyframes drawdown {
+    0%, 50% {
+        height: 0
+    }
+    to {
+        height: calc(100% - 100px)
+    }
+}
+
+
+/* Typewrite Text */
+
+.pb-25 {
+    padding-bottom: 25px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end);
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 105px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 45px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.typewriter p {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end);
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.typewriter p:last-child {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end);
+    animation-delay: 7s;
+    animation-fill-mode: both;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* Services */
+
+.services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #333;
+}
+
+.services h1 {
+    font-size: 52px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.services h3 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.services p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.services .fa {
+    font-size: 92px;
+    color: #000;
+}
+
+.services .blocks {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+
+/* Callout */
+
+.callout {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #d6d6d6;
+}
+
+.callout h1 {
+    font-size: 52px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.callout h3 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.callout p {
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+/* Rotating Cards */
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    margin-top: 35px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 320px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background-color: #000;
+    z-index: 2;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: #000;
+}
+
+.front .name {
+    font-size: 16px;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.9);
+    color: #d6d6d6;
+    padding: 5px 10px;
+    border-radius: 2px;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+span.name {
+    text-align: center !important;
+    position: relative !important;
+    margin: 0 auto;
+}
+
+.front img {
+    margin: 0 auto;
+}
+
+
+/*.back-logo {
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    width: 160px;
+    height: 117px;
+    background: url(assets/img/logo.png) 0 0 no-repeat;
+}*/
+
+.back-logo {
+    position: relative;
+    top: 40px;
+    width: 160px;
+    height: 117px;
+    margin: 0 auto;
+    background: url(assets/img/logo.png) center center no-repeat;
+}
+
+.back-title {
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.back p {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.5em;
+}
+
+
+/* Contact form */
+
+section#contact {
+    padding-top: 60px;
+}
+
+#contact {
+    background-color: #000;
+}
+
+#contact h1 {
+    font-size: 41px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#contact p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto 20px;
+    color: #d6d6d6;
+    max-width: 90%;
+}
+
+#contact .contact-form {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact .contact-form .control-group {
+    max-width: 84%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contact .contact-form .control-group:nth-child(3) {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+#contact .contact-form label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #b1b1b1;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    letter-spacing: 1px;
+    color: #d6d6d6;
+    border: none;
+    border: 1px solid #d6d6d6 !important;
+    border-radius: 0;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+#contact .contact-form input::-webkit-input-placeholder, #contact .contact-form textarea::-webkit-input-placeholder {
+    color: #d6d6d6;
+}
+
+#contact .contact-form input::-moz-placeholder, #contact .contact-form textarea::-moz-placeholder {
+    color: #d6d6d6;
+}
+
+#contact .contact-form.error input.active, #contact .contact-form.error textarea.active {
+    border-color: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form.success input, #contact .contact-form.success textarea {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+#contact .contact-form textarea {
+    height: 110px;
+    padding-top: 10px;
+    resize: none !important;
+}
+
+#contact .contact-form input:focus, #contact .contact-form input:active {
+    border: 1px solid #d6d6d6;
+    outline: none;
+    background: rgba(255, 255, 255, .06);
+}
+
+#contact .contact-form textarea:focus, #contact .contact-form textarea:active {
+    border: 1px solid #fff;
+    outline: none;
+    background: rgba(255, 255, 255, .06);
+}
+
+#contact .contact-form button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 145px;
+    height: 50px;
+    margin: 38px auto 0 auto;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #d6d6d6;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form.success button {
+    border-color: rgba(95, 234, 110, 1) !important;
+    background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form.error button {
+    border-color: rgba(251, 9, 9, 1) !important;
+    background: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form button:hover, #contact .contact-form button:focus, #contact .contact-form button:active {
+    color: #000;
+    border-color: #d6d6d6;
+    outline: none !important;
+    background: rgba(255, 255, 255, .00);
+    box-shadow: none;
+}
+
+#contact .contact-form button:hover {
+    background: rgba(255, 255, 255, .00) !important;
+}
+
+#contact .contact-form button:focus, #contact .contact-form button:active {
+    background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form .btn-primary[disabled] {
+    opacity: 1;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form.error button:hover, #contact .contact-form.error button:focus, #contact .contact-form.error button:active {
+    border-color: rgba(251, 9, 9, 1);
+}
+
+#contact .contact-form.error button:focus {
+    background: rgba(251, 9, 9, 1);
+}
+
+#contact .contact-form.success button:hover, #contact .contact-form.success button:focus, #contact .contact-form.success button:active {
+    border-color: rgba(95, 234, 110, 1);
+}
+
+#contact .contact-form.success button:hover, #contact .contact-form.success button:focus {
+    background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form button::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+    background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form.success button::before {
+    background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form.error button::before {
+    background: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form.success button::before {
+    background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form button:hover::before {
+    right: 0;
+    left: auto;
+    width: 0;
+}
+
+#contact .contact-form.success button:hover::before {
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+#contact .contact-form button i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#contact .contact-form button:hover i {
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+
+#contact .contact-form button i.first {
+    left: -200%;
+    color: #fff;
+}
+
+#contact .contact-form button i.second {
+    left: 0;
+}
+
+#contact .contact-form button:hover i.first {
+    left: 0;
+}
+
+#contact .contact-form button:hover i.second {
+    left: 200%;
+}
+
+#contact .contact-form.error button i.second:before {
+    content: '\e646';
+    color: #fff;
+}
+
+#contact .contact-form.success button i.second:before {
+    content: '\e64c';
+    color: #fff;
+}
+
+#contact .contact-form.success button:hover i.first {
+    left: -200%;
+}
+
+#contact .contact-form.success button:hover i.second {
+    left: 0;
+}
+
+#contact .social-icons {
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#contact .social-icons li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#contact .social-icons li a {
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .9);
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+#contact .social-icons li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .06);
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.contact-details li {
+    list-style: none;
+    line-height: 32px;
+    color: #d6d6d6;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contact-details li:last-child {
+    margin-bottom: 20px;
+}
+
+p.footnote {
+    padding-top: 25px;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width:736px) {
+    .typewriter h2 {
+        padding-top: 0;
+        padding-bottom: 30px;
+        font-size: 22px;
+    }
+    .typewriter h1 {
+        font-size: 66px;
+        padding-bottom: 30px;
+    }
+    .typewriter p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .typewriter h2 {
+        padding-top: 0;
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    .typewriter h1 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+    .typewriter p {
+        font-size: 10px;
+    }
+    #contact .social-icons li {
+        margin: 0 12px;
+    }
+}
+
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.path {
+  stroke-dashoffset:1940;
+  stroke-dasharray:1940;
+  animation: draw 10s linear infinite;
+  fill-opacity: 0;
+}
+
+@keyframes draw {
+  30%{fill-opacity: 0;}
+  31%{fill-opacity: 1;}
+  32%{fill-opacity: 0;}
+  33%{fill-opacity: 1;}
+  34%{fill-opacity: 0;}
+  35%{fill-opacity: 1;}
+  50%{stroke-dashoffset:0;}
+  90%{stroke-dashoffset:0; fill-opacity:
+  }
